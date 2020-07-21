@@ -5,7 +5,7 @@ before_install:
 - composer install
 
 script:
-- ./vendor/bin/phpunit --coverage-clover tests/logs/clover.xml *Test.php
+- ./vendor/bin/phpunit --coverage-clover tests/logs/clover.xml --coverage-html tests/logs/clover_html *Test.php
 
 after_success:
 - ./vendor/bin/php-coveralls -v

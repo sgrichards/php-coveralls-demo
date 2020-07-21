@@ -4,6 +4,10 @@
     <filter>
         <whitelist>
             <directory suffix=".php">.</directory>
+            <exclude>
+                <directory>vendor</directory>
+                <file>BobTest.php</file>
+            </exclude>
         </whitelist>
     </filter>
 </phpunit>
